@@ -1,0 +1,1393 @@
+@import "./common.css";
+
+
+
+/* --------------------banner------------------ */
+div.banner{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    position: relative;
+    width: 92%;
+    height: 80vh;
+    margin: 130px auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;    
+}
+
+div.storeName{
+    display: inline-block;
+    position: absolute;
+    right: 0;   
+    top: 30px;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+}
+div.storeName img{
+    width: 100%;
+}
+div.storeSlogan{
+    display: inline-block;
+    font-size: 26px;
+    color: #1e1e1e;
+    writing-mode: vertical-rl;
+    text-align: start;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    margin: 30px 43%;
+}
+img.moibleStoreName{
+    display: none;
+}
+
+div.slider{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    position: relative;
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+div.slider span{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px 0px 0px 0px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+    line-height: 100px;
+    position: absolute;
+    z-index: 11;
+    right: 0;
+    bottom: 0;
+}
+
+
+div.banner01{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: url(../images/index/banner01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: banner_dilute01 20s;
+    animation-timing-function: linear;
+    opacity: 0;
+    transform: scale(1.2);
+    animation-iteration-count: infinite;
+}
+div.banner02{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: url(../images/index/banner02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    animation: banner_dilute02 20s;
+    animation-timing-function: linear;
+    opacity: 0;
+    transform: scale(1.2);
+    animation-iteration-count: infinite;
+}
+div.banner03{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: url(../images/index/banner03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: banner_dilute03 20s;
+    animation-timing-function: linear;
+    opacity: 1;
+    transform: scale(1.2);
+    animation-iteration-count: infinite;
+}
+@keyframes banner_dilute01 {
+    0%{ opacity: 1;transform: scale(1.19); }
+    28%{ opacity: 1; }
+    30%{ opacity: 1;transform: scale(1);  }
+    68%{ opacity: 1;transform: scale(1.2); }
+    98%{ opacity: 1 ;transform: scale(1.2);}
+    100%{ opacity: 1;transform: scale(1.19); }
+}
+@keyframes banner_dilute02 {
+    0%{ opacity: 0; }
+    28%{ opacity: 0;transform: scale(1.2); }
+    30%{ opacity: 1;  }
+    68%{ opacity: 1;transform: scale(1); }
+    93%{ opacity: 0 ;}
+    100%{ opacity: 0; }
+}
+@keyframes banner_dilute03 {
+    0%{ opacity: 0; }
+    61%{ opacity: 0;transform: scale(1.2); }
+    63%{ opacity: 1; }
+    98%{ opacity: 1;transform: scale(1); }
+    100%{ opacity: 0;transform: scale(1); }
+}
+
+
+
+div.scroll{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+div.scrollWrap{
+    height: 50px;
+    display: block;
+    position: relative;
+}
+div.scroll span{
+    display: inline-block;
+    width: 1px;
+    height: 40px;
+    background-color: #c9ae93;
+    bottom: 0;
+    position: absolute;
+    animation-name: scroll-icon-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll-icon-animation {
+    0% {
+      height: 0;
+      top: 0;
+    }
+    50% {
+      height: 100%;
+      top: 0;
+      bottom: auto;
+    }
+    51% {
+      top: auto;
+      bottom: 0;
+    }
+    100% {
+      height: 0;
+    }
+  }
+
+p.life{
+    line-height: 2;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1199px){
+    div.banner{
+        margin-top: 60px    ;
+        height: 500px;
+    }
+    div.storeSlogan{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width:991px){
+    div.banner{
+        width: 100%;
+        margin-top: 60px;
+    }
+
+}
+@media screen and (max-width:767px){
+    div.banner{
+        height: 400px;
+    }
+    div.storeName{
+        width: 36%;
+    }
+    div.storeSlogan{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:575px){
+    div.banner{
+        width: 100%;
+        height: 100%;
+        padding-top: 100%;
+    }
+
+    div.slider{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    div.storeName{
+        display: none;
+    }
+    img.moibleStoreName{
+        display: inline-block;
+        width: 70%;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    div.scroll{
+        margin-top:30px;
+    }
+}
+
+/*首頁單元區塊共用*/
+section{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+div.title{
+    /* border: 1px solid blue; */
+    width: 220px;
+    height: 100px;
+    background-image: url(../images/index/title_area.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+div.title h2{
+    display: inline-block;
+    font-family: Huakang;
+    font-size: 30px;
+    font-weight: normal;
+    color: #1e1e1e;
+    letter-spacing: 2.5px;
+}
+div.title span{
+    display: inline-block;
+    color: #1e1e1e;
+    margin: 15px 0px;
+    letter-spacing: 2.5px;
+}
+p.blockSlogan{
+    display:inline-block;
+    width: 100%;
+    color: #646464;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:1199px){
+    div.title{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:575px){
+    div.title{
+        width: 100%;
+        text-align: center;
+        height: 70px;
+        margin-left: 0px;
+    }
+    div.title h2{
+        font-size: 24px;
+    }
+    div.title span{
+        margin: 5px 0px;
+    }
+    p.blockSlogan{
+        align-self: center;
+    }
+}
+@media screen and (max-width:400px){
+    p.blockSlogan{
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+a.button_more{
+    display: inline-block;
+    color: #1e1e1e;
+    letter-spacing: 2.5px;
+    border: 1px solid #1e1e1e;
+    border-radius: 1px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+a.button_more div{
+    background-color: #c9ae93;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(7px,7px);
+    z-index: -1;
+    transition: all 0.7s;
+}
+a.button_more:hover{
+    color: #ffffff;
+    border: 1px solid #646464;
+}
+
+a.button_more:hover :first-child{
+    transform: translate(0px,0px);
+    background-color: #1e1e1e;
+}
+
+
+
+
+/* ------------------最新消息------------------ */
+section.newsSection{
+    background-image: url(../images/news/wave4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 0;
+    padding-bottom: 200px;
+
+}
+div.newsBlock{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.newsWrap{
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    width: 940px;
+    height: 640px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.news{
+    /* border: 1px solid blue; */
+    width: 430px;
+    height: 260px;
+    margin-bottom: 20px;
+    position: relative;
+}
+div.news01{
+    margin-top: 50px;
+}
+div.news img{
+    width: 400px;
+    transition: .3s linear;
+}
+div.newsText{
+    padding: 5px 10px 10px 10px;
+    width: 275px;
+    height: 85px;
+    color: #1e1e1e;
+    letter-spacing: 2.5px;
+    line-height: 1.8;
+    background-color:rgba(255, 255, 255, .8);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transition: .3s linear;
+}
+div.newsText span{
+    font-size: 14px;
+    color: #646464;
+}
+div.news img:hover{
+    opacity: 0.7;
+}
+div.newsText:hover{
+    background-color: rgba(255,255,255,1);
+}
+div.newsButten{
+    align-self: center;
+}
+
+@media screen and (max-width:1199px){
+    div.newsBlock{
+        flex-direction: column;
+    }
+    div.newsWrap{
+        margin-top: 0;
+        align-self: center;
+    }
+}
+@media screen and (max-width:991px){
+    section.newsSection{
+        padding-bottom: 200px;
+    
+    }
+    div.newsBlock{
+        width: 100%;
+    }
+    div.newsWrap{
+        margin-top: 0;
+        width:100%;
+        height: 580px;
+        
+    }
+    div.news01{
+        margin-top: 30px;
+    }
+    div.news{
+        width: 45%;
+        height: 250px;
+        overflow: hidden;
+
+    }
+    div.news img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:767px){
+    section.newsSection{
+        background-image:none;
+        padding-bottom: 100px;
+    
+    }
+    div.newsWrap{
+        height: 470px;
+    }
+    div.news01{
+        margin-top: 0;
+    }
+    div.news{
+        width: 49%;
+        height: 220px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    div.news img{
+        width: 100%;
+    }
+    div.newsText{
+        width: 100%;
+        left: 0;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width:575px){
+    div.newsWrap{
+        height: auto;
+    }
+    div.news{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: 100px;
+        border-top: 1px solid #c9ae93;
+        border-bottom: 1px solid #c9ae93;
+    }
+    div.news img{
+        height: 100px;
+        width: auto;
+    }
+    div.newsText{
+        width: 800px;
+        height: 100%;
+        position: static;
+        padding: 5px;
+        line-height: 1.7;
+        flex-grow: 1;
+        font-size: 15px;
+        }
+}
+@media screen and (max-width:400px){
+    div.news{
+        height: 65px;
+    }
+    div.news img{
+        height: 65px;
+    }
+    div.newsText{
+        padding: 3px 5px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    div.newsText span{
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 1.0;
+    }
+}
+
+/* ------------------精選耳機------------------ */
+div.headphoneBlock{
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-bottom: 200px;
+}
+div.headphoneWrap{
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+div.headphoneBox:nth-child(2){
+    justify-content: flex-start;
+}
+div.headphoneBox{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+div.headphoneL{
+    /* border: 1px solid gold; */
+    width: 550px;
+    height: auto;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius:7px;
+    overflow: hidden;
+    margin:5px;
+}
+div.headphoneBox img{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    transition: 1s;
+    
+}
+span.headphoneModel{
+    color: white;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px #1e1e1e;
+    letter-spacing: 2.5px;
+    line-height: 1.8;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    transition: all 0.5s;
+}
+div.headphoneDetailL{
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    font-weight: lighter;
+    outline: 1px solid #ffffff;
+    outline-offset: -15px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 1s;
+}    
+div.headphoneDetailL h4{
+    display: inline-block;
+    width: 60%;
+    border-bottom: 1px solid #fff;
+    font-size: 24px;
+    margin:80px 0px 10px 0px;
+    font-weight: lighter;
+    line-height: 50px;
+}
+div.headphoneL:hover div.headphoneDetailL{
+    opacity: 1;
+}
+div.headphoneS{
+    /* border: 1px solid gold; */
+    width: 265px;
+    height: auto;
+    position: relative;
+    margin:5px;
+    overflow: hidden;
+    border-radius:7px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+div.headphoneDetailS{
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    font-weight: lighter;
+    outline: 1px solid #ffffff;
+    outline-offset: -10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 1s;
+}
+div.headphoneDetailS h4{
+    display: inline-block;
+    width: 70%;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    margin:20px 0px 10px 0px;
+    font-weight: lighter;
+    line-height: 50px;
+}
+div.headphoneS:hover div.headphoneDetailS{
+    opacity: 1;
+}
+div.headphoneS:hover span.headphoneModel,
+div.headphoneL:hover span.headphoneModel{
+    display: none;
+}
+div.headphoneS:hover img,
+div.headphoneL:hover img{
+    filter: blur(2px);
+}
+div.headphoneButton{
+    align-self: center;
+}
+
+@media screen and (max-width:1199px){
+    div.headphoneL{
+        width: 450px;
+    }
+    div.headphoneS{
+        width: 225px;
+    }
+    div.headphoneDetailL h4{
+        margin-top: 40px;
+    }
+    div.headphoneDetailS h4{
+        width: 80%;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:991px){
+    div.headphoneWrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.headphoneBox{
+        width: 550px;
+        box-sizing: content-box;
+        justify-content: center;
+    }
+    div.headphoneBox:nth-child(2){
+        justify-content: center;
+        width: 550px;
+    }
+    div.headphoneL{
+        width: 550px;
+        margin: 0;
+        border-radius: 0px;
+    }
+    div.headphoneS{
+        width: 275px;
+        margin: 0;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:575px){
+    div.headphoneBlock{
+        margin-bottom: 100px;
+    }
+    div.headphoneWrap{
+        margin: 0;
+    }
+    div.headphoneBox{
+        width: 100%;
+    }
+    div.headphoneBox:nth-child(2){
+        width: 100%;
+    }
+    span.headphoneModel{
+        display: none;
+    }
+    div.headphoneL{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+    div.headphoneDetailL{
+        opacity: 1;
+        position: relative;
+        width: 70%;
+        margin:0px;
+        outline-offset: -10px;
+        padding: 10px 10px 15px 10px;
+        background-color: rgba(0, 0, 0, .5);
+        font-weight: 400;
+        border-radius: 5px;
+        box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+        transform: translateY(-50px);
+    }
+    div.headphoneDetailL h4{
+        margin-top: 0px;
+        font-size: 18px;
+        width: 80%;
+    }
+    div.headphoneS{
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+    }
+    div.headphoneDetailS{
+        opacity: 1;
+        position: relative;
+        width: 70%;
+        margin:0px;
+        outline-offset: -10px;
+        padding: 10px 10px 15px 10px;
+        background-color: rgba(0, 0, 0, .5);
+        font-weight: 400;
+        border-radius: 5px;
+        box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+        transform: translateY(-50px);
+    }
+    div.headphoneDetailS h4{
+        margin-top: 0px;
+        letter-spacing: 2px;
+        font-size: 18px;
+        width: 80%;
+    }
+    div.headphoneButton{
+        transform: translateY(-20px);
+    }
+}
+
+/* ------------------咖啡點心------------------ */
+div.cafeBlock{
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-bottom: 100px;
+}
+div.cafeWrap{
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    height: 550px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+div.cafeBtn{
+    cursor: pointer;
+}
+div.cafeTurnL{
+    display: inline-block;
+    transform: rotate(45deg);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 242px;
+    height: 242px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+div.cafeTurnBackL{
+    display: inline-block;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -21%;
+    left: -21%;
+}
+div.cafeTurnBackL span{
+    display: inline-block;
+    position: absolute;
+    left: 140px;
+    color: white;
+    text-shadow: 2px 2px 2px #1e1e1e;
+    line-height: 350px;
+    letter-spacing: 2.5px;
+}
+div.cafeTurnS{
+    display: inline-block;
+    transform: rotate(45deg);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+div.cafeTurnBackS{
+    display: inline-block;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: -21%;
+    left: -21%;
+}
+div.cafeTurnBackS span{
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px #1e1e1e;
+    line-height: 250px;
+    letter-spacing: 2.5px;
+}
+
+div.cafeTurnBackL img,
+div.cafeTurnBackS img{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+div.cafeTurnBackL:hover img,
+div.cafeTurnBackS:hover img{
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+span.cafeName{
+    display: none;
+}
+
+
+/*定位*/
+div.latte{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+div.macchi{
+    position: absolute;
+    top: 50px;
+    left: 430px;
+}
+div.cappu{
+    position: absolute;
+    top: 235px;
+    left: 250px;
+}
+div.mocha{
+    position: absolute;
+    top: 310px;
+    left: 550px;
+}
+div.pie{
+    position: absolute;
+    top: 175px;
+    left: 685px;
+}
+div.muffin{
+    position: absolute;
+    top: 40px;
+    left: 820px;
+}
+div.bread{
+    position: absolute;
+    top: 235px;
+    left: 885px;
+}
+
+@media screen and (max-width:1199px){
+    div.cafeWrap{
+        width: 970px;
+        height: 550px;
+        align-self: center;
+    }
+    div.cafeTurnL{
+        width: 180px;
+        height: 180px;
+    }
+    div.cafeTurnBackL{
+        width: 260px;
+        height: 260px;
+    }
+    div.cafeTurnBackL span{
+        left: 90px;
+        line-height: 250px;
+    }
+    div.latte{
+        top: 50px;
+        left: 60px;
+    }
+    div.macchi{
+        top: 50px;
+        left:340px;
+    }
+    div.cappu{
+        top: 185px;
+        left: 200px;
+    }
+    div.mocha{
+        top: 325px;
+        left: 340px;
+    }
+    div.pie{
+        top: 185px;
+        left: 480px;
+    }
+    div.muffin{
+        top: 50px;
+        left: 620px;
+    }
+    div.bread{
+        top: 235px;
+        left: 710px;
+    }
+}
+@media screen and (max-width:991px){
+    div.cafeWrap{
+        width: 550px;
+        height: auto;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    div.cafeTurnL,
+    div.cafeTurnS{
+       border-radius:8px;
+       transform: rotate(0);
+       box-shadow: none;
+       margin-bottom: 5px;
+    }
+    div.cafeTurnBackL,
+    div.cafeTurnBackS{
+        transform: rotate(0);
+    }
+ 
+    div.latte,
+    div.macchi,
+    div.cappu,
+    div.mocha,
+    div.pie,
+    div.muffin,
+    div.bread{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    div.mocha{
+        display: none;
+    }
+}
+@media screen and (max-width:575px){
+    div.cafeBlock{
+        margin-bottom: 100px;
+    }
+    div.cafeWrap{
+        width: 315px;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 45px;
+    }
+    div.cafeTurnL,
+    div.cafeTurnS{
+       border-radius:100px;
+       margin-bottom: 0px;
+       box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    }
+    div.cafeTurnBackL span,
+    div.cafeTurnBackS span{
+        display: none;
+    }
+    span.cafeName{
+        display: inline-block;
+        width: 110px;
+        border-bottom: 1px solid #c9ae93;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: 2.5px;
+        align-self: center;
+        text-align: right;
+    }
+    span.cafeName:nth-child(2),
+    span.cafeName:nth-child(6),
+    span.cafeName:nth-child(11){
+        text-align:left;
+    }
+}
+
+/* --------Life大圖--------- */
+div.lifeFixed{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url(../images/index/fixedphoto.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden !important;
+    text-align: center;
+}
+
+img.lifeText{
+    width: 27%;
+    position:relative;
+    left: 0% !important;
+    display: inline-block !important;
+    transform: translateY(100px);
+    margin: 0px 100px 0px 200px;
+}
+
+img.lifeCoffee{
+    width: 200px;
+    position:relative;
+    left: 0% !important;
+    display: inline-block !important;
+    transform: rotate(-10deg);
+}
+
+img.lifeHeadphone{
+    width: 220px;
+    position:relative;
+    left: 0% !important;
+    display: inline-block !important;
+    transform: rotate(20deg);
+    transform: translateY(100px);
+}
+@media screen and (max-width:1199px){
+    div.lifeFixed{
+        display: none;
+    }
+}
+
+
+
+
+/* ------------------關於我們------------------ */
+div.aboutBlock{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+div.aboutWrap{
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+div.aboutBox{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img.aboutImg{
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+div.aboutDatail{
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    color: #646464;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span.aboutName{
+    display: inline-block;
+    font-size: 20px;
+    color: #1e1e1e;
+    margin: 20px 0px 0px 0px;
+}
+
+div.aboutBox:nth-child(1){
+    margin-top: 120px;
+}
+div.aboutBox:nth-child(2){
+    margin-top: 60px;
+}
+
+@media screen and (max-width:991px){
+    img.aboutImg{
+        width: 230px;
+    }
+}
+@media screen and (max-width:767px){
+    img.aboutImg{
+        width: 180px;
+    }
+    div.aboutDatail{
+        letter-spacing: 2px;
+    }
+    div.aboutBox:nth-child(1){
+        margin-top: 80px;
+    }
+    div.aboutBox:nth-child(2){
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:575px){
+    div.aboutBlock{
+        margin-bottom: 100px;
+    }
+    div.aboutWrap{
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    div.aboutBox:nth-child(1){
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    div.aboutBox:nth-child(2){
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    div.aboutBox{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    img.aboutImg{
+        border-radius: 15px;
+        width: 230px;
+    }
+    span.aboutName{
+        width: 220px;
+    }
+}
+
+
+/* ------------------門市資訊------------------ */
+div.locationsBlock{
+    margin-bottom: 200px;
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+div.locationsWrap{
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+div.locationsBox{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span.locationsName{
+    font-size: 24px;
+    letter-spacing: 2.5px;
+    display: inline-block;
+}
+span.slash{
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: #c9ae93;
+    transform: rotate(40deg);
+    margin: 10px 0px;
+}
+div.locationsPhoto{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+div.locationsPhoto img{
+    width: 100%;
+    opacity: 0.9;
+    transition: 15s linear;
+    vertical-align: middle;
+}
+div.locationsPhoto:hover img{
+    opacity: 1;
+    transform: scale(1.5);
+}
+div.locationsDatail{
+    line-height: 2;
+    letter-spacing: 2.5px;
+    margin-top: 20px;
+    color: #646464;
+}
+
+@media screen and (max-width:1199px){
+    div.locationsBox{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:991px){
+    div.locationsBox{
+        width: 240px;
+    }
+    div.locationsDatail{
+        letter-spacing: 1.5px;
+    }
+}
+
+@media screen and (max-width:767px){
+    div.locationsWrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.locationsBox{
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    div.locationsDatail{
+        letter-spacing: 2.5px;
+    }
+}
+
+@media screen and (max-width:575px){
+    div.locationsBlock{
+        margin-bottom: 10px;
+    }
+    div.locationsBox{
+        margin-top: 40px;
+        width: 100%;
+    }
+    div.locationsPhoto{
+        border-radius: 0;
+        /* box-shadow: none; */
+    }
+}
+
+
+
+
+/* -------燈箱------- */
+div.lightBlock{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+div.-showBlock{
+    display: flex;
+}
+div.lightbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+}
+div.imgBox{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin-top: 30px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+div.lightbox img{
+    width: 100%;
+}
+span.triangle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid white;
+    border-right: 25px solid white;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+span.lightName{
+    color: #1e1e1e;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: center;
+}
+
+table{
+    width: 240px;
+    color: #646464;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    margin: 10px 0px 20px 0px;
+}
+td.-r{
+    text-align: right;
+}
+tr{
+    border-bottom: 1px solid #c9ae93;
+}
+button.lightBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width:413px){
+    div.lightbox{
+        width: 260px;
+    }
+    div.imgBox{
+        width: 80%;
+    }
+    table{
+        width: 200px;
+        line-height: 1.7;
+    }
+}

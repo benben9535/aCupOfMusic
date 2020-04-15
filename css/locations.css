@@ -1,0 +1,351 @@
+@import "./common.css";
+html{
+    scroll-behavior:smooth;
+}
+div.-locations{
+    background-image: url(../images/locations/pagetitle_locations.jpg);
+    background-position: bottom;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+section{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 80px;
+}
+@media screen and (max-width:1199px){
+    section{
+        width: 100%;
+    }
+}
+
+/*門市區塊*/
+div.locationsBlock{
+    width: 700px;
+    margin: 50px 20px 120px 0px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../images/common/background01.jpg);
+    position: relative;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+div.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    margin: 50px 25px;
+}
+span.locationsName{
+    display: inline-block;
+    width: 90%;
+    border-bottom: 1px solid #c9ae93;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+div.locationsDatail{
+    display: inline-block;
+    width: 90%;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+a.googleLink{
+    display: inline-block;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    color: #646464;
+    margin: 15px 0px;
+    transition: all 0.5s;
+}
+a.googleLink:hover{
+    color: #1e1e1e;
+}
+img.mapIcon{
+    width: 30px;
+    vertical-align: bottom;
+    animation: junp 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes junp{
+    form{transform: translateY(0px);}
+    to{transform: translateY(-5px);}
+}
+img.photo{
+    width: 700px;
+    position: absolute;
+    left: -460px;
+    top: 140px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+img.titleTp{
+    position: absolute;
+    width: 320px;
+    left:-150px;
+    top: 0px;
+}
+img.titleTc{
+    position: absolute;
+    width: 450px;
+    left:-210px;
+    top: 0px;
+}
+img.titleKh{
+    position: absolute;
+    width: 470px;
+    left:-230px;
+    top: 0px;
+}
+
+@media screen and (max-width:1199px){
+    div.locationsBlock{
+        width: 500px;
+        margin: 50px 20px 20px 0px;
+    }
+    div.card{
+        width: 350px;
+        margin: 30px 20px;
+    }
+    div.locationsDatail{
+        display: inline-block;
+        width: 90%;
+        line-height: 2;
+        letter-spacing: 2.5px;
+        margin-bottom: 20px;
+    }
+    img.map{
+        width: 90%;
+    }
+    img.photo{
+        width: 550px;
+        left: -440px;
+        top: 120px;
+    }
+    img.titleTp{
+        width: 320px;
+        left:-250px;
+        top: 0px;
+    }
+    img.titleTc{
+        width: 450px;
+        left:-320px;
+        top: -10px;
+    }
+    img.titleKh{
+        width: 470px;
+        left:-340px;
+        top: -10px;
+    }
+}
+@media screen and (max-width:991px){
+    div.locationsBlock{
+        width: 400px;
+        margin: 50px 10px 10px 0px;
+    }
+    div.card{
+        width: 300px;
+        margin: 15px;
+    }
+    div.locationsDatail{
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    img.photo{
+        width: 400px;
+        left: -330px;
+        top: 140px;
+    }
+    img.titleTp{
+        width: 250px;
+        left:-200px;
+        top: 20px;
+    }
+    img.titleTc{
+        width: 360px;
+        left:-280px;
+        top: 20px;
+    }
+    img.titleKh{
+        width: 370px;
+        left:-290px;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:767px){
+    section{
+        align-items: center;
+    }
+    div.locationsBlock{
+        width: 95%;
+        margin: 50px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+    div.card{
+        width: 400px;
+        margin: 30px 20px;
+    }
+    img.photo{
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    img.titleTp{
+        width: 220px;
+        right: 0px;
+        left:unset;
+        top: -35px;
+    }
+    img.titleTc{
+        width: 300px;
+        right: 0px;
+        left:unset;
+        top: -35px;
+    }
+    img.titleKh{
+        width: 320px;
+        right: -10px;
+        left:unset;
+        top: -40px;
+    }
+}
+
+@media screen and (max-width:575px){
+    div.locationsBlock{
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    div.card{
+        width: 300px;
+        margin: 30px 0px 10px 0px;
+    }
+    img.photo{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    img.titleTp{
+      display: none;
+    }
+    img.titleTc{
+   display: none;
+    }
+    img.titleKh{
+    display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -----------頁籤--------- */
+aside{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 15%;
+}
+a.tagBox{
+    width: 120px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #c9ae93;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0px;
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s;
+}
+a.tagBox:hover{
+    width: 150px;
+}
+span.tagName{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+span.tagNameEng{
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+@media screen and (max-width:1199px){
+    a.tagBox{
+        width: 100px;
+        height: 40px;
+    }
+    a.tagBox:hover{
+        width: 120px;
+    }
+    span.tagName{
+        letter-spacing: 1.5px;
+        font-size: 16px;
+    }
+    span.tagNameEng{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width:991px){
+    a.tagBox{
+        margin: 10px 0px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        vertical-align: middle;
+        justify-content: center;
+    }
+    a.tagBox:hover{
+        width: 44px;
+    }
+    span.tagName{
+        text-align: center;
+    }
+    span.tagNameEng{
+        display: none;
+    }
+}
+@media screen and (max-width:413px){
+    a.tagBox{
+        margin: 5px 0px;
+        padding: 5px 0px 5px 0px;   
+    }
+    span.tagName{
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+}

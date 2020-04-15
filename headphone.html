@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="耳機,咖啡,甜點,meze,aedle,af">
+    <meta name="description" content="一杯音樂不只是一間耳機專門店，更不僅僅是一間咖啡館，而是將陪伴您走過這趟旅程的旅行地圖">
+    <link rel="stylesheet" href="./css/headphone.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./js/ani.js"></script>
+    <title>一杯音樂 A cup of music | 精選耳機</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <a href="index.html">
+                <h1>A Cup Of Music<br>
+                    一杯音樂複合式耳機專門店</h1>
+                <span>
+                    A Cup Of Music<br>
+                    一杯音樂
+                </span>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <div class="box3">
+                <a href="news.html"><span>News<br><br>最新消息</span></a>
+                <a href="news.html" class="berger_link">News<span class="chi">最新消息</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="headphone.html" class="nowPage"><span>Headphone<br><br>精選耳機</span></a>
+                <a href="headphone.html" class="berger_link">Headphone<span class="chi">精選耳機</span></a>
+                <div class="menuList">
+                    <a href="headphone.html">獨家代理</a>
+                    <a href="headphone.html">頭戴式耳機</a>
+                    <a href="headphone.html">耳道式耳機</a>
+                    <a href="headphone.html">抗噪耳機</a>
+                    <a href="headphone.html">藍牙耳機</a>
+                    <a href="headphone.html">運動耳機</a>
+                </div>
+            </div>
+
+            <div class="box3">
+                <a href="cafe.html"><span>Coffee&Snack<br><br>咖啡 | 點心</span></a>
+                <a href="cafe.html" class="berger_link">Coffee&Snack<span class="chi">咖啡點心</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="about.html"><span>About<br><br>關於我們</span></a>
+                <a href="about.html" class="berger_link">About<span class="chi">關於我們</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="locations.html"><span>Locations<br><br>門市資訊</span></a>
+                <a href="locations.html" class="berger_link">Locations<span class="chi">門市資訊</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="column.html"><span>Column<br><br>專欄分享</span></a>
+                <a href="column.html" class="berger_link">Column<span class="chi">專欄分享</span></a>
+            </div>
+        </div>
+        <!-- 漢堡按鈕 -->
+        <div class="box">
+            <div class="flex">
+                <div class="line -top"></div>
+                <div class="lineMid -mid"></div>
+                <div class="line -bot"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- GOTOP按鈕 -->
+    <div id="goTop" class="-hidden">
+        <img src="./images/common/backToTop2.svg" alt="" class="goTopBtn">
+    </div>
+    <!-- 精選耳機大橫幅 -->
+    <div class="pagetitle -headphone">
+        <div class="pagetitlePosition">
+            <div class="pagetitleBox"> </div>
+            <div class="pagetitleBox2"> </div>
+            <h1 class="pagetitleText">精選耳機</h1>
+            <h2 class="pagetitleEng">Headphone</h2>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <!-- 搜尋列 -->
+            <div class="searcBar">
+                <div class="searchArea">
+                    <label for="search"><img src="./images/headphone/search.png" alt=""></label>
+                    <input type="text" name="headphone_search" id="search" placeholder=" 輸入型號搜尋" class="search">
+                </div>
+                <!-- 排序方式 -->
+                <div class="order">
+                    <select name="order" class="orderInput">
+                        <option value="1" selected>價格由高至低</option>
+                        <option value="2">價格由低至高</option>
+                        <option value="3">上市日期排序</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="productBlock">
+                <!-- 側邊欄 -->
+                <aside class="productType">
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">獨家代理</a>
+                        <a href="#" class="type_name">Aedle</a>
+                        <a href="#" class="type_name">Atomic Floyd</a>
+                        <a href="#" class="type_name">Meze</a>
+                    </div>
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">頭戴式耳機</a>
+                        <a href="#" class="type_name">便攜型</a>
+                        <a href="#" class="type_name">室內型</a>
+                        <a href="#" class="type_name">監聽 / DJ</a>
+                    </div>
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">耳道式耳機</a>
+                        <a href="#" class="type_name">線控 / 麥克風</a>
+                        <a href="#" class="type_name">監聽 / DJ</a>
+                        <a href="#" class="type_name">後掛式耳機</a>
+                    </div>
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">抗噪耳機</a>
+                        <a href="#" class="type_name">頭戴式抗噪</a>
+                        <a href="#" class="type_name">入耳式抗噪</a>
+                        <a href="#" class="type_name">藍牙抗噪</a>
+                    </div>
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">藍牙耳機</a>
+                        <a href="#" class="type_name">頭戴式藍牙</a>
+                        <a href="#" class="type_name">頸掛式藍牙</a>
+                        <a href="#" class="type_name">無線藍牙</a>
+                    </div>
+                    <div class="type_headphone">
+                        <a href="#" class="type_title">運動耳機</a>
+                        <a href="#" class="type_name">防汗耳機</a>
+                        <a href="#" class="type_name">防水耳機</a>
+                        <a href="#" class="type_name">藍牙運動耳機</a>
+                    </div>
+                </aside>
+
+                <div class="product">
+                    <!-- 麵包屑 -->
+                    <div class="breadcrumb">
+                        <ol>
+                            <li><a href="#">精選耳機(All)</a></li>
+                            <li><a href="#">頭戴式耳機</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- 卡片區 -->
+                    <div class="cardBlock">
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/Meze-99-Classics.jpg" alt="">
+                                </div>
+                                <div class="productDetail">自然材料 自然聲音<br>透過原木找到音樂真諦</div>
+                                <span>Meze 99 Classics<br>頭戴式原木耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/BO-H8i.png" alt="">
+                                </div>
+                                <div class="productDetail">瑞典時尚設計<br>歐風溫暖音質表現</div>
+                                <span>B&o H8i<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/ATH-ANC500BT.jpg" alt="">
+                                </div>
+                                <div class="productDetail">兼具藍牙與清晰音質<br>高CP值耳機選擇</div>
+                                <span>ATH ANC500BT<br>便攜型頭戴藍牙耳機</span>
+                                <div class="bluetooth"> </div>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/ATH-MSR7SE.jpg" alt="">
+                                </div>
+                                <div class="productDetail">承襲MSR7完美女聲<br>深藍外殼限定版</div>
+                                <span>ATH MSR7SE<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/SONY-XB650BT.jpg" alt="">
+                                </div>
+                                <div class="productDetail">自信搶眼霧面色<br>輕巧方便攜帶</div>
+                                <span>SONY XB650BT<br>便攜型頭戴藍牙耳機</span>
+                                <div class="bluetooth"> </div>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/BO-H9.png" alt="">
+                                </div>
+                                <div class="productDetail">夢幻少女外型<br>歐風溫暖音質表現</div>
+                                <span>B&o H9<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/ATH-MSR7b.jpg" alt="">
+                                </div>
+                                <div class="productDetail">女聲完美呈現<br>有「陌生人妻」之美稱</div>
+                                <span>ATH MSR7b<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/SONY-1000XM3.jpg" alt="">
+                                </div>
+                                <div class="productDetail">SONY抗噪旗艦機<br>完全沉浸音樂世界</div>
+                                <span>SONY 1000XM3<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                        <div class="cards lastCard">
+                            <a href="product.html">
+                                <div class="productImg"><img src="./images/headphone/ATH-AP2000Ti_550.jpg" alt="">
+                                </div>
+                                <div class="productDetail">描繪寂靜之處<br>細緻表現音樂系節</div>
+                                <span>ATH AP2000Ti<br>便攜型頭戴式耳機</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <ul class="pageSelection">
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#" class="nowSelection">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+
+            <a href="" class="loginMore">載入更多</a>
+        </section>
+    </main>
+
+    <aside class="mobileAside">
+        <button id="filterBtn"><img src="./images/headphone/filterIcon.png" alt=""></button>
+        <div class="typeBlock">
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">獨家代理</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">Aedle</a>
+                <a href="#" class="mobileTypeName">Atomic Floyd</a>
+                <a href="#" class="mobileTypeName">Meze</a>
+            </div>
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">頭戴式耳機</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">便攜型</a>
+                <a href="#" class="mobileTypeName">室內型</a>
+                <a href="#" class="mobileTypeName">監聽 / DJ</a>
+            </div>
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">耳道式耳機</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">線控 / 麥克風</a>
+                <a href="#" class="mobileTypeName">監聽 / DJ</a>
+                <a href="#" class="mobileTypeName">後掛式耳機</a>
+            </div>
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">抗噪耳機</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">頭戴式抗噪</a>
+                <a href="#" class="mobileTypeName">入耳式抗噪</a>
+                <a href="#" class="mobileTypeName">藍牙抗噪</a>
+            </div>
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">藍牙耳機</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">頭戴式藍牙</a>
+                <a href="#" class="mobileTypeName">頸掛式藍牙</a>
+                <a href="#" class="mobileTypeName">無線藍牙</a>
+            </div>
+            <div class="mobileTypeBox">
+                <div class="titleBox">
+                    <a href="#" class="mobileTypeTitle">運動耳機</a>
+                    <button class="typeBtn"><img src="./images/headphone/filterIcon2.png" alt="" class="btnImg"></button>
+                </div>
+                <a href="#" class="mobileTypeName">防汗耳機</a>
+                <a href="#" class="mobileTypeName">防水耳機</a>
+                <a href="#" class="mobileTypeName">藍牙運動耳機</a>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <footer>
+        <div class="footerSocial">
+            <a href="#">
+                <img src="./images/common/icon_fb.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_ig.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_line.png" alt="">
+            </a>
+        </div>
+
+        <div class="addressWrap">
+            
+            <div class="addressBox">
+                <a href="locations.html#tp">
+                <span>台北西門館</span>
+                電話:(02)2008-1226<br>
+                地址:台北市萬華區成都路99號<br>
+                LINE ID: cup_music2017
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#tc">
+                <span>台中一中館</span>
+                電話:(04)2008-1226<br>
+                地址:台中市北區一中街99號<br>
+                LINE ID: cup_music2018
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#kh">
+                <span>高雄建國館</span>
+                電話:(07)2008-1226<br>
+                地址:高雄市三民區建國路99號<br>
+                LINE ID: cup_music2019
+               </a>
+            </div>
+    
+        </div>
+
+        <span class="copy">COPYRIGHT &copy 2019 a cup of music .All rights reserved.</span>
+        <span class="copy2">COPYRIGHT &copy 2019 a cup of music</span>
+
+
+    </footer>
+
+    <!-- 側邊選單JS -->
+    <script>
+        let filterBtn = document.getElementById("filterBtn");
+        let asides = document.getElementsByClassName("mobileAside");
+        let typeBtns = document.getElementsByClassName("typeBtn");
+        let btnImgs = document.getElementsByClassName("btnImg");
+        let typeBoxs = document.getElementsByClassName("mobileTypeBox");
+        window.addEventListener("load",function(){
+            //瓷片按鈕點擊滑出
+            filterBtn.onclick = function(){
+                asides[0].classList.toggle("-showFilter")
+            }
+            //子選單點擊拉開
+            for( let i = 0 ; i<=5 ; i++){
+                typeBtns[i].onclick = function(){
+                    typeBoxs[i].classList.toggle("-typeOpen");
+                    btnImgs[i].classList.toggle("-closeBtn");
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ----------------------以下是JS---------------------- -->
+    <!-- 載入JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 漢堡按鈕 -->
+    <script>
+        $(function () {
+            // 點擊按鈕，選單縮放
+            $("div.box").on("click", function () {
+                $("div.menu").slideToggle();
+            });
+        });
+    </script>
+    <script>
+        // JavaScript 版本：DOM 載入完成之後執行
+        document.addEventListener('DOMContentLoaded', function () {
+            var hamburger_icon = document.getElementsByClassName("box")[0];
+            hamburger_icon.addEventListener("click", function () {
+                if (hamburger_icon.classList.contains("-on")) {
+                    hamburger_icon.classList.remove("-on");
+                } else {
+                    hamburger_icon.classList.add("-on");
+                }
+            });
+        });
+    </script>
+    <!-- 下滑才出現NAV陰影 -->
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+            if (scroll_top >= 100) {
+                $("nav").addClass("-scroll");
+            } else {
+                $("nav").removeClass("-scroll");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+    <!-- GO TOP 按鈕 -->
+    <script>
+    $(function(){
+        // 點擊按鈕，頁面滑到最上方
+        $("#goTop").on("click", function(e){
+            e.preventDefault();
+            $('html, body').animate({
+            scrollTop: 0
+            }, 750);
+        });
+    });
+    </script>
+    <script>
+       var goTopBtn = $('#goTop');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 600) {
+                goTopBtn.addClass('-show');
+            } else {
+                goTopBtn.removeClass('-show');
+            }
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

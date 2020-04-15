@@ -1,0 +1,501 @@
+@import "./common.css";
+
+div.-column{
+    background-image: url(../images/column/pagetitle_column.jpg);
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* 整個頁籤及內容最外層區塊 */
+div.tab_container{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    /* margin-top: 30px */
+}
+@media screen and (max-width:1199px){
+    div.tab_container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:575px){
+    div.tab_container{
+        margin-bottom: 100px;
+    }
+}
+
+
+
+/* 頁籤區塊 */
+div.tab_container div.tab_list_block{
+  margin-bottom: 20px;
+}
+
+/* 頁籤列表 */
+div.tab_container div.tab_list_block ul.tab_list{
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  width: 130px;
+  height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  padding:  10px;
+  color: #646464;
+  margin: 0px 20px;
+  letter-spacing: 2.5px;
+  line-height: 2;
+  transition: all 0.5s;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a:hover{
+    color: #c9ae93;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+  color: #c9ae93;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:575px){
+    div.tab_container div.tab_list_block ul.tab_list > li > a{
+        width: 100px;
+        margin: 0px;
+        padding: 8px 0px;
+    }
+    div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* 頁籤內容區塊 */
+div.tab_container div.tab_contents{
+    width: 100%;
+    border-top: 1px solid #c9ae93;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.tab_container div.tab_contents div.tab{
+    /* padding: 10px; */
+    display: none;
+}
+div.tab_container div.tab_contents div.tab.-on{
+    width: 100%;
+    display: flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* ---------------搜尋、排列順率-------------- */
+div.searcBar{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+div.searcBar img{
+    margin-left: 10px;
+    width: 25px;
+    vertical-align: middle;
+}
+input.search{
+    height: 25px;
+}
+select.orderInput{
+    height: 31px;
+    margin-right: 10px;
+    color: #646464;
+}
+@media screen and (max-width:575px){
+    input.search{
+        width: 140px;
+    }
+}
+
+
+/*卡片區*/
+div.cards{
+    width: 23%;
+    margin-bottom: 70px;
+    position: relative;
+}
+div.-down{
+    top: 40px;
+}
+div.cards a{
+    color: #1e1e1e;
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+}
+div.cards img{
+    width: 100%;
+    transition: all 0.3s;
+}/* 圖片比例是280X320 */
+
+div.cards:hover img{
+    opacity: 0.7;
+}
+div.cards:hover span{
+    filter: brightness(0.5);
+}
+div.cards:hover span.type{
+    width: 100%;
+}
+span.type{
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #646464;
+    border-bottom: 1px solid #c9ae93;
+    transition: all 1s;
+}
+span.title{
+    display: block;
+    font-size: 18px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+}
+span.date{
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #646464;
+    transition: all 0.3s;
+}
+
+
+@media screen and (max-width:1199px){
+    span.title{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width:991px){
+    div.cards{
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    div.-down{
+        top: 20px;
+    }
+    span.title{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width:767px){
+    div.cards{
+        width: 45%;
+    }
+    div.-down{
+        top: 30px;
+    }
+    span.title{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width:575px){
+    div.cards{
+        width: 80%;
+    }
+    div.cards img{
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+    div.-down{
+        top:0px;
+    }
+    span.title{
+        font-size: 18px;
+        letter-spacing: 2.5px;
+    }
+}
+@media screen and (max-width:350px){
+    span.title{
+        font-size: 16px;
+        letter-spacing: 2.5px;
+    }
+}
+
+
+
+/* -----------試聽報告內頁-------------- */
+section{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+    margin-top: 30px;
+    /* overflow: hidden; */
+}
+@media screen and (max-width:1199px){
+    section{
+        width: 100%;
+    }
+}
+div.back{
+    width: 100%;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: left;
+    border-bottom: 1px solid #c9ae93;
+    margin-bottom: 10px;
+}
+div.back a{
+    margin-left: 15px;
+    color: #646464;
+    transition: all 0.5s;
+}
+div.back a:hover{
+    color: #1e1e1e;
+}
+
+/*標題橫幅*/
+div.titleBlock{
+    background-image: url(../images/common/background01.jpg);
+    width: 100%;
+    position: relative;
+}
+img.titleImg{
+    width: 50%;
+    vertical-align: middle;
+}
+div.titleBox{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+h2.bigTitle{
+    font-family: Huakang;
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+h3.smallTitle{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #1e1e1e;
+}
+div.reportDate{
+    width: 100%;
+    color: #646464;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: right;
+    border-bottom: 1px solid #c9ae93;
+    margin-bottom: 20px;
+}
+div.reportDate span{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1199px){
+    div.titleBox{
+        padding: 30px 50px;
+    }
+}
+@media screen and (max-width:991px){
+    div.titleBox{
+        padding: 20px 50px;
+    }
+    h2.bigTitle{
+        font-size: 26px;
+        line-height: 1.8;
+        margin-bottom: 0px;
+    }
+    h3.smallTitle{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:767px){
+    img.titleImg{
+        width: 80%;
+    }
+    div.titleBox{
+        padding: 20px 30px;
+        top: 50%;
+        left: unset;
+        right: 0;
+        transform: translate(0%,-50%);
+    }
+}
+@media screen and (max-width:575px){
+    img.titleImg{
+        width: 100%;
+    }
+    div.titleBox{
+        width: 80%;
+        padding: 20px 10px;
+        top: 50%;
+        left: 50%;
+        right: unset;
+        transform: translate(-50%,-50%);
+    }
+    h2.bigTitle{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    h3.smallTitle{
+        font-size: 16px;
+    }
+}
+
+
+/*文章內容*/
+div.reportBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.reportBox{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+div.-r{
+    flex-direction: row-reverse;
+}
+div.reportText{
+    width: 50%;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+span.subtitle{
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+}
+img.reportImg{
+    width: 40%;
+}
+@media screen and (max-width:1199px){
+    div.reportBox{
+        align-items: center;
+    }
+    div.reportText{
+        width: 50%;
+        line-height: 1.8;
+    }
+    img.reportImg{
+        width: 45%;
+    }
+}
+@media screen and (max-width:991px){
+    div.reportBox{
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+    div.reportText{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    img.reportImg{
+        width: 75%;
+    }
+}
+@media screen and (max-width:767px){
+    div.reportText{
+        width: 90%;
+    }
+    img.reportImg{
+        width: 90%;
+    }
+}
+@media screen and (max-width:575px){
+    div.reportText{
+        width: 95%;
+        color: #646464;
+    }
+    span.subtitle{
+        color: #1e1e1e;
+    }
+    img.reportImg{
+        width: 95%;
+    }
+}
+
+
+
+
+
+/*耳機檔案連結*/
+a.button_more{
+    margin:30px 0px 110px 0px;
+    display: inline-block;
+    color: #1e1e1e;
+    letter-spacing: 2.5px;
+    border: 1px solid #1e1e1e;
+    border-radius: 1px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    transition: all 0.3s;
+    position: relative;
+    align-self: center;
+}
+
+a.button_more div{
+    background-color: #c9ae93;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(7px,7px);
+    z-index: -1;
+    transition: all 0.7s;
+}
+a.button_more:hover{
+    color: #ffffff;
+    border: 1px solid #646464;
+}
+
+a.button_more:hover :first-child{
+    transform: translate(0px,0px);
+    background-color: #1e1e1e;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="耳機,咖啡,甜點,meze,aedle,af">
+        <meta name="description" content="一杯音樂不只是一間耳機專門店，更不僅僅是一間咖啡館，而是將陪伴您走過這趟旅程的旅行地圖">
+        <link rel="stylesheet" href="./css/locations.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="./js/ani.js"></script>
+        <title>一杯音樂 A cup of music | 門市資訊</title>
+    </head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <a href="index.html">
+                <h1>A Cup Of Music<br>
+                    一杯音樂複合式耳機專門店</h1>
+                <span>
+                    A Cup Of Music<br>
+                    一杯音樂
+                </span>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <div class="box3">
+                <a href="news.html"><span>News<br><br>最新消息</span></a>
+                <a href="news.html" class="berger_link">News<span class="chi">最新消息</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="headphone.html"><span>Headphone<br><br>精選耳機</span></a>
+                <a href="headphone.html" class="berger_link">Headphone<span class="chi">精選耳機</span></a>
+                <div class="menuList">
+                    <a href="headphone.html">獨家代理</a>
+                    <a href="headphone.html">頭戴式耳機</a>
+                    <a href="headphone.html">耳道式耳機</a>
+                    <a href="headphone.html">抗噪耳機</a>
+                    <a href="headphone.html">藍牙耳機</a>
+                    <a href="headphone.html">運動耳機</a>
+                </div>
+            </div>
+            <div class="box3">
+                <a href="cafe.html"><span>Coffee&Snack<br><br>咖啡 | 點心</span></a>
+                <a href="cafe.html" class="berger_link">Coffee&Snack<span class="chi">咖啡點心</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="about.html"><span>About<br><br>關於我們</span></a>
+                <a href="about.html" class="berger_link">About<span class="chi">關於我們</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="locations.html" class="nowPage"><span>Locations<br><br>門市資訊</span></a>
+                <a href="locations.html" class="berger_link">Locations<span class="chi">門市資訊</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="column.html"><span>Column<br><br>專欄分享</span></a>
+                <a href="column.html" class="berger_link">Column<span class="chi">專欄分享</span></a>
+            </div>
+        </div>
+        <!-- 漢堡按鈕 -->
+        <div class="box">
+            <div class="flex">
+                <div class="line -top"></div>
+                <div class="lineMid -mid"></div>
+                <div class="line -bot"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- GOTOP按鈕 -->
+    <div id="goTop" class="-hidden">
+        <img src="./images/common/backToTop2.svg" alt="" class="goTopBtn">
+    </div>
+    
+    <!-- 門市資訊大橫幅 -->
+    <div class="pagetitle -locations">
+        <div class="pagetitlePosition">
+            <div class="pagetitleBox"> </div>
+            <div class="pagetitleBox2"> </div>
+            <h1 class="pagetitleText">門市資訊</h1>
+            <h2 class="pagetitleEng">Locations</h2>
+        </div>
+    </div>
+
+    <!-- 頁籤 -->
+    <aside>
+        <a href="#tp" class="tagBox">
+            <span class="tagName">台北</span>
+            <span class="tagNameEng">Taipei</span>
+        </a>
+        <a href="#tc" class="tagBox">
+            <span class="tagName">台中</span>
+            <span class="tagNameEng">Taichung</span>
+        </a>
+        <a href="#kh" class="tagBox">
+            <span class="tagName">高雄</span>
+            <span class="tagNameEng">Kaohsiung</span>
+        </a>
+    </aside>
+
+    <main>
+        <section>
+            <a name="tp"></a>
+            <div class="locationsBlock">
+                <div class="card">
+                    <span class="locationsName">台北西門館</span>
+                    <div class="locationsDatail">
+                        電話：(02)2008-1226 <br>
+                        地址：台北市萬華區成都路99號<br>
+                        LINE ID：cup_music2017 <br>
+                        營業時間：周一至周日10:00~22:00
+                    </div>
+                    <img src="./images/locations/map_taipei.jpg" alt="" class="map">
+                    <a href="" class="googleLink">
+                        <img src="./images/locations/map_icon.png" alt="" class="mapIcon">
+                        前往Google地圖
+                    </a>
+                </div>
+                <img src="./images/locations/photo_taipei.jpg" alt="" class="photo">
+                <img src="./images/locations/title_Taipei.png" alt="" class="titleTp">
+            </div>
+
+            <a name="tc"></a>
+            <div class="locationsBlock">
+                <div class="card">
+                    <span class="locationsName">台中一中館</span>
+                    <div class="locationsDatail">
+                        電話：(04)2008-1226 <br>
+                        地址：台中市北區一中街99號 <br>
+                        LINE ID：cup_music2018 <br>
+                        營業時間：周一至周日10:00~22:00 <br>
+                    </div>
+                    <img src="./images/locations/map_taichung.jpg" alt="" class="map">
+                    <a href="" class="googleLink">
+                        <img src="./images/locations/map_icon.png" alt="" class="mapIcon">
+                        前往Google地圖
+                    </a>
+                </div>
+                <img src="./images/locations/photo_taichung.jpg" alt="" class="photo">
+                <img src="./images/locations/title_Taichung.png" alt="" class="titleTc">
+                
+            </div>
+
+            <a name="kh"></a>
+            <div class="locationsBlock">
+                <div class="card">
+                    <span class="locationsName">高雄建國館</span>
+                    <div class="locationsDatail">
+                        電話：(07)2008-1226 <br>
+                        地址：高雄市三民區建國路99號<br>
+                        LINE ID：cup_music2019 <br>
+                        營業時間：周一至周日10:00~22:00
+                    </div>
+                    <img src="./images/locations/map_kaohsiung.jpg" alt="" class="map">
+                    <a href="" class="googleLink">
+                        <img src="./images/locations/map_icon.png" alt="" class="mapIcon">
+                        前往Google地圖
+                    </a>
+                </div>
+                <img src="./images/locations/photo_kaohsiung.jpg" alt="" class="photo">
+                <img src="./images/locations/title_Kaohsiung.png" alt="" class="titleKh">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerSocial">
+            <a href="#">
+                <img src="./images/common/icon_fb.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_ig.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_line.png" alt="">
+            </a>
+        </div>
+
+        <div class="addressWrap">
+            
+            <div class="addressBox">
+                <a href="locations.html#tp">
+                <span>台北西門館</span>
+                電話:(02)2008-1226<br>
+                地址:台北市萬華區成都路99號<br>
+                LINE ID: cup_music2017
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#tc">
+                <span>台中一中館</span>
+                電話:(04)2008-1226<br>
+                地址:台中市北區一中街99號<br>
+                LINE ID: cup_music2018
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#kh">
+                <span>高雄建國館</span>
+                電話:(07)2008-1226<br>
+                地址:高雄市三民區建國路99號<br>
+                LINE ID: cup_music2019
+               </a>
+            </div>
+    
+        </div>
+
+        <span class="copy">COPYRIGHT &copy 2019 a cup of music .All rights reserved.</span>
+        <span class="copy2">COPYRIGHT &copy 2019 a cup of music</span>
+
+
+    </footer>
+    
+
+
+    <!-- ----------------------以下是JS---------------------- -->
+    <!-- 載入JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 漢堡按鈕 -->
+    <script>
+        $(function () {
+            // 點擊按鈕，選單縮放
+            $("div.box").on("click", function () {
+                $("div.menu").slideToggle();
+            });
+        });
+    </script>
+    <script>
+        // JavaScript 版本：DOM 載入完成之後執行
+        document.addEventListener('DOMContentLoaded', function () {
+            var hamburger_icon = document.getElementsByClassName("box")[0];
+            hamburger_icon.addEventListener("click", function () {
+                if (hamburger_icon.classList.contains("-on")) {
+                    hamburger_icon.classList.remove("-on");
+                } else {
+                    hamburger_icon.classList.add("-on");
+                }
+            });
+        });
+    </script>
+    <!-- 下滑才出現NAV陰影 -->
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+            if (scroll_top >= 100) {
+                $("nav").addClass("-scroll");
+            } else {
+                $("nav").removeClass("-scroll");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+    <!-- GO TOP 按鈕 -->
+    <script>
+    $(function(){
+        // 點擊按鈕，頁面滑到最上方
+        $("#goTop").on("click", function(e){
+            e.preventDefault();
+            $('html, body').animate({
+            scrollTop: 0
+            }, 400);
+        });
+    });
+    </script>
+    <script>
+       var goTopBtn = $('#goTop');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 400) {
+                goTopBtn.addClass('-show');
+            } else {
+                goTopBtn.removeClass('-show');
+            }
+        });
+    </script>
+</body>
+</html>

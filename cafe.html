@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="耳機,咖啡,甜點,meze,aedle,af">
+        <meta name="description" content="一杯音樂不只是一間耳機專門店，更不僅僅是一間咖啡館，而是將陪伴您走過這趟旅程的旅行地圖">
+        <link rel="stylesheet" href="./css/cafe.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="./js/ani.js"></script>
+        <title>一杯音樂 A cup of music | 咖啡&點心</title>
+    </head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <a href="index.html">
+                <h1>A Cup Of Music<br>
+                    一杯音樂複合式耳機專門店</h1>
+                <span>
+                    A Cup Of Music<br>
+                    一杯音樂
+                </span>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="./images/navBar/LOGO.svg" alt=""></a>
+            <div class="box3">
+                <a href="news.html"><span>News<br><br>最新消息</span></a>
+                <a href="news.html" class="berger_link">News<span class="chi">最新消息</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="headphone.html"><span>Headphone<br><br>精選耳機</span></a>
+                <a href="headphone.html" class="berger_link">Headphone<span class="chi">精選耳機</span></a>
+                <div class="menuList">
+                    <a href="headphone.html">獨家代理</a>
+                    <a href="headphone.html">頭戴式耳機</a>
+                    <a href="headphone.html">耳道式耳機</a>
+                    <a href="headphone.html">抗噪耳機</a>
+                    <a href="headphone.html">藍牙耳機</a>
+                    <a href="headphone.html">運動耳機</a>
+                </div>
+            </div>
+            <div class="box3">
+                <a href="cafe.html" class="nowPage"><span>Coffee&Snack<br><br>咖啡 | 點心</span></a>
+                <a href="cafe.html" class="berger_link">Coffee&Snack<span class="chi">咖啡點心</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="about.html"><span>About<br><br>關於我們</span></a>
+                <a href="about.html" class="berger_link">About<span class="chi">關於我們</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="locations.html"><span>Locations<br><br>門市資訊</span></a>
+                <a href="locations.html" class="berger_link">Locations<span class="chi">門市資訊</span></a>
+            </div>
+
+            <div class="box3">
+                <a href="column.html"><span>Column<br><br>專欄分享</span></a>
+                <a href="column.html" class="berger_link">Column<span class="chi">專欄分享</span></a>
+            </div>
+        </div>
+        <!-- 漢堡按鈕 -->
+        <div class="box">
+            <div class="flex">
+                <div class="line -top"></div>
+                <div class="lineMid -mid"></div>
+                <div class="line -bot"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- GOTOP按鈕 -->
+    <div id="goTop" class="-hidden">
+        <img src="./images/common/backToTop2.svg" alt="" class="goTopBtn">
+    </div>
+    
+    <!-- 咖啡點心大橫幅 -->
+    <div class="pagetitle -cafe">
+        <div class="pagetitlePosition">
+            <div class="pagetitleBox"> </div>
+            <div class="pagetitleBox2"> </div>
+            <h1 class="pagetitleText">咖啡|點心</h1>
+            <h2 class="pagetitleEng">Coffee & Snack</h2>
+            
+        </div>
+    </div>
+
+    <!-- 頁籤 -->
+        <aside>
+            <a href="#" class="tagBox">
+                <span class="tagName">咖啡系列 / Coffee</span class="tagName">
+                <img src="./images/cafe/tag_coffee.png" alt="" class="tagIconCoffee">
+            </a>
+            <a href="#snack" class="tagBox">
+                <span class="tagName">點心系列 / Snack </span class="tagName">
+                <img src="./images/cafe/tag_snack.png" alt="" class="tagIconSnack">
+            </a>
+        </aside>
+
+
+    <!-- 主內容 -->
+    <main>
+        <section>
+            
+            <div class="cafeBlock">
+                <div class="titleBox">
+                    <img src="./images/cafe/coffeeTitle.png" alt="" class="titleImg">
+                    <span class="titleText">- 咖啡系列 -</span>
+                </div>
+                
+                <div class="cardBlock">
+                    <div class="card">
+                        <img src="./images/cafe/latte.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">經典拿鐵 Latte</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $120 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            <img src="./images/cafe/hot-coffee.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">焦糖瑪奇朵 Macchiato</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $135 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            <img src="./images/cafe/hot-coffee.png" alt="">
+                        </div>
+                        <img src="./images/cafe/macchiato.jpg" alt="" class="cardImg">
+                    </div>
+                    <div class="card">
+                        <img src="./images/cafe/black.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">美式咖啡 Americano</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $100 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            <img src="./images/cafe/hot-coffee.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">卡布奇諾 Cappucino</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $135 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            <img src="./images/cafe/hot-coffee.png" alt="">
+                        </div>
+                        <img src="./images/cafe/cappu.jpg" alt="" class="cardImg">
+                    </div>
+                    <div class="card">
+                        <img src="./images/cafe/CaramelLatte.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">焦糖拿鐵 Caramel Latte</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $140 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">摩卡咖啡 Caffé Mocha</span>
+                            濃郁醇厚的濃縮咖啡<br>
+                            搭配新鮮蒸煮優質鮮奶<br>
+                            覆上綿密細緻的奶泡<br>
+                            $135 <br>
+                            <img src="./images/cafe/ice-coffee.png" alt="">
+                            <img src="./images/cafe/hot-coffee.png" alt="">
+                        </div>
+                        <img src="./images/cafe/CaffeMocha.jpg" alt="" class="cardImg">
+                    </div>
+                    <a name="snack"></a>
+                </div>
+
+                <!-- 點心區 -->
+                
+                <div class="titleBox">
+                    <img src="./images/cafe/snackTitle.png" alt="" class="titleImg">
+                    <span class="titleText">- 點心系列 -</span>
+                </div>
+
+                <div class="cardBlock">
+                    <div class="card">
+                        <img src="./images/cafe/tiramisu.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">提拉米蘇 Tiramisu</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $120 <br>
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">可可塔 Choco Tart</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $120 <br>
+                        </div>
+                        <img src="./images/cafe/SaltedChocoTart.jpg" alt="" class="cardImg">
+                    </div>
+                    <div class="card">
+                        <img src="./images/cafe/MilleCrepes.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">法式千層 Mille Crêpes</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $120 <br>
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">美式奶油鬆餅<br>American Waffle</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $135 <br>
+                            
+                        </div>
+                        <img src="./images/cafe/AmericanWaffle.jpg" alt="" class="cardImg">
+                    </div>
+                    <div class="card">
+                        <img src="./images/cafe/muffin.jpg" alt="" class="cardImg">
+                        <div class="textBox">
+                            <span class="productName">鮮果鬆餅 Fruit Waffle</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $135 <br>
+                        </div>
+                    </div>
+                    <div class="card -reverse">
+                        <div class="textBox -r">
+                            <span class="productName">法式鹹派 French Quiche</span>
+                            乳酪與些微咖啡酒<br>
+                            綿密的蛋糕內餡<br>
+                            甜而不膩的好滋味<br>
+                            $135 <br>
+                        </div>
+                        <img src="./images/cafe/pie.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerSocial">
+            <a href="#">
+                <img src="./images/common/icon_fb.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_ig.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/common/icon_line.png" alt="">
+            </a>
+        </div>
+
+        <div class="addressWrap">
+            
+            <div class="addressBox">
+                <a href="locations.html#tp">
+                <span>台北西門館</span>
+                電話:(02)2008-1226<br>
+                地址:台北市萬華區成都路99號<br>
+                LINE ID: cup_music2017
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#tc">
+                <span>台中一中館</span>
+                電話:(04)2008-1226<br>
+                地址:台中市北區一中街99號<br>
+                LINE ID: cup_music2018
+               </a>
+            </div>
+
+            <div class="addressBox">
+                <a href="locations.html#kh">
+                <span>高雄建國館</span>
+                電話:(07)2008-1226<br>
+                地址:高雄市三民區建國路99號<br>
+                LINE ID: cup_music2019
+               </a>
+            </div>
+    
+        </div>
+
+        <span class="copy">COPYRIGHT &copy 2019 a cup of music .All rights reserved.</span>
+        <span class="copy2">COPYRIGHT &copy 2019 a cup of music</span>
+
+
+    </footer>
+
+<!-- -----燈箱----- -->
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/latte.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">經典拿鐵 Latte</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/macchiato.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">焦糖瑪奇朵 Macchiato</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/black.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">美式咖啡 Americano</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/cappu.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">卡布奇諾 Cappucino</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/CaramelLatte.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">焦糖拿鐵 Caramel Latte</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/CaffeMocha.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">摩卡咖啡 Caffé Mocha</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+
+
+
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/tiramisu.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">提拉米蘇 Tiramisu</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/SaltedChocoTart.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">可可塔 Choco Tart</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/MilleCrepes.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">法式千層 Mille Crêpes</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/AmericanWaffle.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">美式奶油鬆餅<br>
+            American Waffle</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/muffin.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">鮮果鬆餅 Fruit Waffle</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+<div class="lightBlock">
+    <div class="lightbox">
+        <div class="imgBox">
+            <img src="./images/cafe/pie.jpg" alt="">
+            <span class="triangle"></span>
+        </div>
+        
+        <span class="lightName">法式鹹派 French Quiche</span>
+        <table>
+            <tr>
+                <td>價格</td>
+                <td class="-r">$135</td>
+            </tr>
+            <tr>
+                <td>熱量(大卡)</td>
+                <td class="-r">113</td>
+            </tr>
+            <tr>
+                <td>蛋白質(公克)</td>
+                <td class="-r">6.1</td>
+            </tr>
+            <tr>
+                <td>脂肪(公克)</td>
+                <td class="-r">5.8</td>
+            </tr>
+            <tr>
+                <td>飽和脂肪(公克)</td>
+                <td class="-r">3.3</td>
+            </tr>
+            <tr>
+                <td>反式脂肪(公克)</td>
+                <td class="-r">0</td>
+            </tr>
+            <tr>
+                <td>碳水化合物(公克)</td>
+                <td class="-r">9</td>
+            </tr>
+            <tr>
+                <td>糖(公克)</td>
+                <td class="-r">8</td>
+            </tr>
+            <tr>
+                <td>鈉(毫克)</td>
+                <td class="-r">72</td>
+            </tr>
+        </table>
+        <button class="lightBtn"><img src="./images/cafe/lightBoxClose.png" alt=""></button>
+    </div>
+</div>
+
+<!------- 燈箱JS ------>
+<script>
+    let imgs = document.getElementsByClassName("cardImg");
+    let lightBlocks = document.getElementsByClassName("lightBlock");
+    let colseBtns = document.getElementsByClassName("lightBtn");
+    let html = document.getElementsByTagName("html");
+    
+    window.addEventListener("load",function(){
+        for( let i=0 ; i<imgs.length ; i++){
+            imgs[i].onclick = function(){
+                lightBlocks[i].style.display = "flex";
+            }
+            colseBtns[i].onclick = function(){
+                lightBlocks[i].style.display = "none";
+            }
+        }
+    })
+</script>
+
+
+
+
+
+
+
+
+    <!-- ----------------------以下是JS---------------------- -->
+    <!-- 載入JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 漢堡按鈕 -->
+    <script>
+        $(function () {
+            // 點擊按鈕，選單縮放
+            $("div.box").on("click", function () {
+                $("div.menu").slideToggle();
+            });
+        });
+    </script>
+    <script>
+        // JavaScript 版本：DOM 載入完成之後執行
+        document.addEventListener('DOMContentLoaded', function () {
+            var hamburger_icon = document.getElementsByClassName("box")[0];
+            hamburger_icon.addEventListener("click", function () {
+                if (hamburger_icon.classList.contains("-on")) {
+                    hamburger_icon.classList.remove("-on");
+                } else {
+                    hamburger_icon.classList.add("-on");
+                }
+            });
+        });
+    </script>
+    <!-- 下滑才出現NAV陰影 -->
+    <script>
+        var header_active = function () {
+            // 取得使用者滑了多少 px
+            var scroll_top = $(window).scrollTop();
+            // 將 scroll_top 數值放到 p.-pos 內容
+            $("p.-pos").html(scroll_top);
+            if (scroll_top >= 100) {
+                $("nav").addClass("-scroll");
+            } else {
+                $("nav").removeClass("-scroll");
+            }
+        };
+        $(function () {
+            // 第三步：偵測頁面滑動時會觸發
+            $(window).scroll(function () {
+                header_active();
+            });
+        });
+    </script>
+    <!-- GO TOP 按鈕 -->
+    <script>
+        $(function(){
+            // 點擊按鈕，頁面滑到最上方
+            $("#goTop").on("click", function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                scrollTop: 0
+                }, 400);
+            });
+        });
+        </script>
+        <script>
+           var goTopBtn = $('#goTop');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 600) {
+                    goTopBtn.addClass('-show');
+                } else {
+                    goTopBtn.removeClass('-show');
+                }
+            });
+        </script>
+
+
+
+</body>
+</html>
